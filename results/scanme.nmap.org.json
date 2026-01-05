@@ -1,0 +1,206 @@
+{
+  "timestamp": "2026-01-05T12:33:04.108152",
+  "command": "nmap -sV --script vuln -oX -",
+  "hosts": {
+    "45.33.32.156": {
+      "hostname": "scanme.nmap.org",
+      "state": "up",
+      "services": [
+        {
+          "port": 22,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "ssh",
+          "product": "OpenSSH",
+          "version": "6.6.1p1 Ubuntu 2ubuntu2.13",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2023-38408",
+              "cvss": 9.8,
+              "severity": "CRITICAL"
+            },
+            {
+              "cve": "CVE-2016-1908",
+              "cvss": 9.8,
+              "severity": "CRITICAL"
+            },
+            {
+              "cve": "CVE-2015-5600",
+              "cvss": 8.5,
+              "severity": "HIGH"
+            },
+            {
+              "cve": "CVE-2020-15778",
+              "cvss": 7.8,
+              "severity": "HIGH"
+            },
+            {
+              "cve": "CVE-2016-6515",
+              "cvss": 7.8,
+              "severity": "HIGH"
+            }
+          ],
+          "vulnerability_context": {
+            "enumerated_cves": 31,
+            "displayed_cves": 5,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "CRITICAL"
+          }
+        },
+        {
+          "port": 25,
+          "protocol": "tcp",
+          "state": "filtered",
+          "service": "smtp",
+          "product": "",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Apache httpd",
+          "version": "2.4.7",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2024-38476",
+              "cvss": 9.8,
+              "severity": "CRITICAL"
+            },
+            {
+              "cve": "CVE-2024-38474",
+              "cvss": 9.8,
+              "severity": "CRITICAL"
+            },
+            {
+              "cve": "CVE-2023-25690",
+              "cvss": 9.8,
+              "severity": "CRITICAL"
+            },
+            {
+              "cve": "CVE-2022-31813",
+              "cvss": 9.8,
+              "severity": "CRITICAL"
+            },
+            {
+              "cve": "CVE-2022-23943",
+              "cvss": 9.8,
+              "severity": "CRITICAL"
+            }
+          ],
+          "vulnerability_context": {
+            "enumerated_cves": 86,
+            "displayed_cves": 5,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "CRITICAL"
+          }
+        },
+        {
+          "port": 135,
+          "protocol": "tcp",
+          "state": "filtered",
+          "service": "msrpc",
+          "product": "",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 139,
+          "protocol": "tcp",
+          "state": "filtered",
+          "service": "netbios-ssn",
+          "product": "",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 445,
+          "protocol": "tcp",
+          "state": "filtered",
+          "service": "microsoft-ds",
+          "product": "",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 9929,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "nping-echo",
+          "product": "Nping echo",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 31337,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "tcpwrapped",
+          "product": "",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        }
+      ],
+      "risk_summary": {
+        "total_vulnerabilities": 117,
+        "overall_risk": "CRITICAL",
+        "risk_points": 585
+      }
+    }
+  },
+  "target": "scanme.nmap.org"
+}
