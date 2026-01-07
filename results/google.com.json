@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-01-07T13:31:10.711569",
+  "command": "nmap -sV --script vuln -oX -",
+  "hosts": {
+    "142.251.222.142": {
+      "hostname": "google.com",
+      "state": "up",
+      "services": [
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "gws",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "https",
+          "product": "gws",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        }
+      ],
+      "risk_summary": {
+        "total_vulnerabilities": 0,
+        "overall_risk": "INFO",
+        "risk_points": 0
+      }
+    }
+  },
+  "target": "google.com"
+}

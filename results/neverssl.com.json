@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-01-07T12:53:33.723396",
+  "command": "nmap -sV --script vuln -oX -",
+  "hosts": {
+    "34.223.124.45": {
+      "hostname": "neverssl.com",
+      "state": "up",
+      "services": [
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Apache httpd",
+          "version": "2.4.62",
+          "vulnerabilities": [
+            {
+              "cve": "CVE-2025-23048",
+              "cvss": 9.1,
+              "severity": "CRITICAL"
+            },
+            {
+              "cve": "CVE-2025-58098",
+              "cvss": 8.3,
+              "severity": "HIGH"
+            },
+            {
+              "cve": "CVE-2025-59775",
+              "cvss": 7.5,
+              "severity": "HIGH"
+            },
+            {
+              "cve": "CVE-2025-55753",
+              "cvss": 7.5,
+              "severity": "HIGH"
+            },
+            {
+              "cve": "CVE-2025-53020",
+              "cvss": 7.5,
+              "severity": "HIGH"
+            }
+          ],
+          "vulnerability_context": {
+            "enumerated_cves": 13,
+            "displayed_cves": 5,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "CRITICAL"
+          }
+        }
+      ],
+      "risk_summary": {
+        "total_vulnerabilities": 13,
+        "overall_risk": "CRITICAL",
+        "risk_points": 65
+      }
+    }
+  },
+  "target": "neverssl.com"
+}

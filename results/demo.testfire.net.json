@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-01-07T23:40:12.511552",
+  "command": "nmap -sV --script vuln -oX -",
+  "hosts": {
+    "65.61.137.117": {
+      "hostname": "demo.testfire.net",
+      "state": "up",
+      "services": [
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Apache Tomcat/Coyote JSP engine",
+          "version": "1.1",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Apache Tomcat/Coyote JSP engine",
+          "version": "1.1",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 8080,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "Apache Tomcat/Coyote JSP engine",
+          "version": "1.1",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 8443,
+          "protocol": "tcp",
+          "state": "closed",
+          "service": "https-alt",
+          "product": "",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        }
+      ],
+      "risk_summary": {
+        "total_vulnerabilities": 0,
+        "overall_risk": "INFO",
+        "risk_points": 0
+      }
+    }
+  },
+  "target": "demo.testfire.net"
+}

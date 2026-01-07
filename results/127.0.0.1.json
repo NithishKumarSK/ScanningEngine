@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-01-07T22:52:42.507443",
+  "command": "nmap -sV --script vuln -oX -",
+  "hosts": {
+    "127.0.0.1": {
+      "hostname": "localhost",
+      "state": "up",
+      "services": [
+        {
+          "port": 135,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "msrpc",
+          "product": "Microsoft Windows RPC",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 445,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "microsoft-ds",
+          "product": "",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 3306,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "mysql",
+          "product": "MySQL",
+          "version": "8.0.41",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        }
+      ],
+      "risk_summary": {
+        "total_vulnerabilities": 0,
+        "overall_risk": "INFO",
+        "risk_points": 0
+      }
+    }
+  },
+  "target": "127.0.0.1"
+}

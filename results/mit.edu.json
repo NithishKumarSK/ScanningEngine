@@ -1,0 +1,52 @@
+{
+  "timestamp": "2026-01-07T23:14:28.516161",
+  "command": "nmap -sV --script vuln -oX -",
+  "hosts": {
+    "23.58.1.151": {
+      "hostname": "mit.edu",
+      "state": "up",
+      "services": [
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "AkamaiGHost",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        },
+        {
+          "port": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "product": "AkamaiGHost",
+          "version": "",
+          "vulnerabilities": [],
+          "vulnerability_context": {
+            "enumerated_cves": 0,
+            "displayed_cves": 0,
+            "note": "Enumerated CVEs represent all vulnerabilities associated with the detected service/version. Displayed CVEs show only the most severe issues for clarity."
+          },
+          "security_summary": {
+            "top_severity": "NONE"
+          }
+        }
+      ],
+      "risk_summary": {
+        "total_vulnerabilities": 0,
+        "overall_risk": "INFO",
+        "risk_points": 0
+      }
+    }
+  },
+  "target": "mit.edu"
+}
